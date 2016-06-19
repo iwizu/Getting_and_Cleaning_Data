@@ -25,4 +25,4 @@ The sensor signals (accelerometer and gyroscope) were pre-processed by applying 
 2. We load the related data using read.table
 3. Using grpl we extract the measurements on the mean and standard deviation for each measurement
 4. We load the test and train labels and then we bind the data using cbind
-5. We merge the data and write the tidy file as CSV
+5. We merge the data and write the tidy file
