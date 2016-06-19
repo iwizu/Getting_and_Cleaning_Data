@@ -12,4 +12,4 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 
 1. Download and unzip the above zip file into the R working directory.
 2. Run the script (run_analysis.R) 
-3. After the execution the script will export a CSV tidy file (tidy.csv)
+3. After the execution the script will export a  tidy file (tidy.txt)
