@@ -35,12 +35,10 @@ names(X_train) = features
 y_train <- read.table("./UCI HAR Dataset/train/y_train.txt")
 subject_train <- read.table("./UCI HAR Dataset/train/subject_train.txt")
 
-# Load activity labels
+# Load test and train labels
 y_test[,2] = activity_labels[y_test[,1]]
 names(y_test) = c("activity", "activity_Name")
 names(subject_test) = "subject"
-
-# Load activity data
 y_train[,2] = activity_labels[y_train[,1]]
 names(y_train) = c("activity", "activity_Name")
 names(subject_train) = "subject"
@@ -61,4 +59,4 @@ melts      = melt(data, id = ids, measure.vars = datas)
 
 # Last step -> Create & write tidy as CSV
 tidy = dcast(melts, subject + activity_Name ~ variable, mean)
-write.csv(tidy, "tidy.csv", row.names=FALSE)
+write.table(tidy, file = "./tidy.txt", row.name=FALSE)
